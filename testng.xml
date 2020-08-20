@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+	
+		   <listeners>
+		
+				<listener class-name="com.qa.util.ExtentListener" />
+		
+		</listeners> 
+
+
+   <test  name="Test">
+  <parameter name="Browser" value="chrome"/>
+    <classes>
+    <class name = "com.qa.Testcases.SubEditorLoginTest"/>
+ 	 <!-- <class name = "com.qa.Testcases.SubEditorInavildCredentialsTest"/>  
+      <class name = "com.qa.Testcases.NewsLinkTest"/> 
+      <class name = "com.qa.Testcases.SendReviewTest"/>
+ 	  <class name = "com.qa.Testcases.EditorLoginTest"/>
+        <class name = "com.qa.Testcases.EditorLoginInvalidCrendentials"/>   -->
+    </classes>
+  </test> <!-- Test -->
+  
+ <!--    <test thread-count="5" name="Firefox">
+  <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name = "com.qa.Testcases.LoginTest"/>
+    </classes>
+  </test>
+  
+   <test thread-count="5" name="IE">
+  <parameter name="Browser" value="IE"/>
+    <classes>
+      <class name = "com.qa.Testcases.LoginTest"/>
+    </classes>
+  </test>  -->
+  
+</suite> <!-- Suite -->
